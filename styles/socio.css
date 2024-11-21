@@ -1,0 +1,340 @@
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(232, 193, 251);
+}
+::selection {
+    background-color: rgb(78, 0, 116);
+    color: white;
+}
+.header  {
+    font-family: "Lato", sans-serif;;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    color: rgb(78, 0, 116);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-bottom: 2px solid #dadada;
+}
+.header a {
+    text-decoration: none;
+    color: rgb(78, 0, 116);
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.167em;
+    text-transform: uppercase;
+}
+ul {
+    margin: 0;
+}
+li {
+    display: inline;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.logo  {
+    width: 200px;
+}
+.details-section  {
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 2px solid #dadada;
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+}
+.main-details {
+    width: 80%;
+    margin: 0 auto;
+}
+.details-title {
+    width: 100%;
+    padding: 15px;
+    text-align: left;
+
+}
+.details-title h1 {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.details-title h4, h6 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.details-title h4 {
+    font-weight: normal;
+    margin: 0;
+}
+
+.details-title h6 {
+    font-weight: normal;
+    font-size: 15px;
+    margin: 0;
+
+}
+.more-details {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+.more-details p {
+    margin: 3px;
+    padding: 3px;
+}
+
+.details-table {
+    width: 50%;
+    text-align: left;
+}
+
+.bigger-details-table {
+    width: 100%;
+    display: flex;
+}
+.status {
+    cursor: default;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 17px;
+    padding: 4px 8px;
+    display: inline-block;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.ativa {
+    background-color: #c6f4d1;
+    color: #0d7627;
+}
+.baixada {
+    background-color: rgb(105, 105, 105);
+    color: rgb(255, 255, 255);
+}
+.nula {
+    background-color: #dadada;
+    color: #707070;
+}
+
+.suspensa {
+    background-color: #ffe0aa;
+    color: #ce8820;
+}
+
+.inapta {
+    background-color: #f7b3b3;
+    color: #c82f2f;
+}
+.matriz {
+    background-color: #d4e5f9;
+    color: #0a5299;
+    border-radius: 10px;
+}
+.filial {
+    background-color: rgb(241, 213, 255);
+    color: rgb(78, 0, 116);
+    border-radius: 10px;
+}
+.status-matriz {
+    display: inline-block;
+    gap: 10px;
+    margin-top: 10px;
+}
+.status {
+    margin-right: 10px; /* Adiciona um espaço à direita de cada span */
+}
+.status:last-child {
+    margin-right: 0; /* Remove a margem do último span */
+}
+.info-section {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: rgb(232, 193, 251);
+    margin: auto;
+    padding: 25px;  
+}
+
+.info  {
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #ececec;
+    background-color: white;
+    border-radius: 10px;
+
+}
+
+.info-header {
+    background-color: rgb(78, 0, 116);
+    color: white;
+    border-top-left-radius: 10px;
+    padding: 10px;
+    border-top-right-radius: 10px
+}
+
+.info-header h1 {
+    margin-top: 0;
+    margin: 0;
+    font-size: 21px;
+}
+
+.info-socios {
+    width: 100%;
+}
+
+.info-secondary {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+}
+
+.info-endereco, .info-contato {
+    width: 50%;
+    font-size: 14px;
+}
+
+.info-endereco {
+    margin-right: 10px;
+}
+
+
+.info-details {
+    font-size: 15px;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+.info-details b {
+    color: rgb(78, 0, 116);
+}
+
+.socio, .endereco, .contato, .filial-matriz{
+    padding: 15px;
+}
+
+
+
+
+.info-filial {
+    margin-top: 20px;
+}
+
+
+.tabela {
+    font-family: "Montserrat", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+    border-radius: 30px;
+    font-size: 14px;
+    table-layout: fixed; /* Isso ajuda a evitar espaços em branco inesperados */
+}
+
+.tabela th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    color: black;
+    font-size: 18px;
+}
+.tabela-row td {
+    padding: 5px;
+
+}
+.tabela-row:hover {
+    background-color: rgb(107, 66, 128);
+    color: white;
+    cursor: pointer;
+}
+
+.clickable-row {
+    padding: 10px;
+}
+
+.alert   {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    margin: 0 auto;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-weight: normal;
+}
+
+.pagination-nav a {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgb(241, 213, 255);
+    border: 1px solid rgb(232, 193, 251);
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.page-info p {
+    font-weight: 700;
+}
+
+.pagination-nav span {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(232, 193, 251);
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.pagination-nav a:hover{
+    background-color:  rgb(232, 193, 251);
+}
+
+.empresas {
+    padding: 15px;
+}
+
+.navigation-section {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+
+}
+
+.navigation-section button {
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(78, 0, 116);
+    text-decoration: wavy;
+    color: white;
+    padding: 15px 15px;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+}
+
+.navigation-section a {
+    text-decoration: wavy;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

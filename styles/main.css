@@ -1,0 +1,206 @@
+/* rgb(78, 0, 116) */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+::selection {
+    background-color: #976ca8;
+    color: white;
+}
+
+
+
+/* Css do formulário de busca */
+
+.search-section {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title  {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: #976ca8;
+}
+
+.search-main {
+    display: flex;
+    width: 50%;
+}
+
+.result-alert {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-search button {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: #976ca8;
+    color: white;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.form-search button:hover {
+    cursor: pointer;
+    background-color: #976ca8;
+    transition: 0.1s;
+}
+
+.form-search input:focus {
+    outline: none;
+    border: 2px solid #976ca8; 
+}
+
+.form-search input {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8vh;
+    background-color: white;
+    color: #212529;     
+    border: 1px solid #ced4da;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    font-size: 15px;
+    border-right: none;
+}
+
+/* Css tabela e seção de resultados da busca */
+
+.tabela {
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    border-collapse: separate; /* Mantém as bordas separadas */
+    border-spacing:5px 0;/* Remove o espaçamento entre células */
+    text-align: center;
+    font-weight: 500;
+}
+
+th, td {
+    padding: 8px; /* Espaçamento interno */
+}
+
+
+.alert   {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin: 0 auto;
+    color: #976ca8;
+    text-align: center;
+}
+
+
+.alert-container {
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.tabela th {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    padding: 10px;
+    background-color: #976ca8;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+}
+
+tr:nth-child(even) {
+    background: #f3ebeb;
+  }
+
+.tabela-row td {
+    padding: 10px;
+    font-size: 10px;
+}
+
+.tabela-row:hover {
+    background-color: #976ca8;
+    color: white;
+    cursor: pointer;
+}
+
+.result-section {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Css paginação */
+
+.pagination {
+    padding-left: 10px;
+}
+
+.pagination-nav {
+    font-family: "Montserrat", sans-serif;
+}
+.pagination-nav a {
+    margin-right: 10px;
+     text-decoration: none;
+     padding: 5px 10px;
+     background-color: #976ca8;
+     border: 1px solid #976ca8;
+     color: white;
+     vertical-align: middle;
+     text-align: center;
+}
+
+.page-info p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.pagination-nav a:hover {
+    background-color:  #7e548f;
+}
+
+.pagination-nav span {
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #976ca8;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+}
